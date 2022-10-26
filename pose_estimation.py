@@ -49,7 +49,7 @@ def draw_keypoints(frame, keypoints, confidence_threshold):
         if kp_conf > confidence_threshold:
             cv2.circle(frame, (int(kx), int(ky)), 4, (0, 255, 0), -1)
 
-cap = cv2.VideoCapture('/home/rohit/PycharmProjects/computer_vision_project/Pose_estimation/video/Jumping Jacks .mp4')
+cap = cv2.VideoCapture(0)
 while True:
     ret, frame = cap.read()
 
